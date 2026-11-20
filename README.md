@@ -207,3 +207,5 @@ Some “open-source” projects may have dual licensing, proprietary components,
 **Made with ❤️ for the open-source community**  
 
 If this list helped you, please ⭐ the repo!
+# Awesome-Android-Virtualization-APK-Runner-On-Macos
+
