@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Android-Virtualization-APK-Runner-On-Macos/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Android-Virtualization-APK-Runner-On-Macos?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Android-Virtualization-APK-Runner-On-Macos/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Android-Virtualization-APK-Runner-On-Macos?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Android-Virtualization-APK-Runner-On-Macos/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Android-Virtualization-APK-Runner-On-Macos?style=flat-square&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Android-Virtualization-APK-Runner-On-Macos/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Android-Virtualization-APK-Runner-On-Macos?style=flat-square&color=green" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -60,9 +60,9 @@ Below is the comparative breakdown of commercial and hosted Android emulation / 
 
 ## 🛠️ Open-Source GitHub Projects
 
-The premier open-source repositories powering Android virtualization, APK translation, device streaming, and kernel-level emulation on macOS. **Sorted descending by GitHub Star Count.**
+The premier open-source repositories powering Android virtualization, APK translation, device streaming, and kernel-level emulation on macOS. **Sorted descending by GitHub Stars_Count.**
 
-| Project | Stars Badge | Description & macOS Capabilities |
+| Project | Stars_Badge | Description & macOS Capabilities |
 | :--- | :--- | :--- |
 | **[scrcpy](https://github.com/Genymobile/scrcpy)** | [![Stars](https://img.shields.io/github/stars/Genymobile/scrcpy?style=social&color=white)](https://github.com/Genymobile/scrcpy/stargazers) | High-speed, ultra-low-latency screen mirroring and input control tool for Android over USB/Wi-Fi on macOS; perfect companion for headless virtual Android instances. |
 | **[termux-app](https://github.com/termux/termux-app)** | [![Stars](https://img.shields.io/github/stars/termux/termux-app?style=social&color=white)](https://github.com/termux/termux-app/stargazers) | Powerful terminal emulator and Linux environment for Android, widely used inside macOS Android virtual machines and emulators for package management and CLI toolchains. |
