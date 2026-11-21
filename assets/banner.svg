@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3DDC84"/>
+      <stop offset="50%" stop-color="#00C4B4"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <linearGradient id="appleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+
+    <!-- Glowing Orbs Filters -->
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+    </filter>
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="70" result="blur"/>
+    </filter>
+    <filter id="glowPurple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="80" result="blur"/>
+    </filter>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.08)"/>
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.02)"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 44px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 21px;
+      fill: url(#accentGrad);
+      letter-spacing: 0.5px;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      fill: #E2E8F0;
+    }
+    .pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      fill: #3DDC84;
+    }
+    .floating-card {
+      animation: float 6s ease-in-out infinite alternate;
+    }
+    @keyframes pulseGlow {
+      0% { opacity: 0.35; transform: scale(0.95); }
+      50% { opacity: 0.65; transform: scale(1.05); }
+      100% { opacity: 0.35; transform: scale(0.95); }
+    }
+    @keyframes floatOrb1 {
+      0% { transform: translate(0px, 0px); }
+      100% { transform: translate(40px, -30px); }
+    }
+    @keyframes floatOrb2 {
+      0% { transform: translate(0px, 0px); }
+      100% { transform: translate(-35px, 25px); }
+    }
+    .orb1 {
+      animation: floatOrb1 8s ease-in-out infinite alternate;
+    }
+    .orb2 {
+      animation: floatOrb2 10s ease-in-out infinite alternate;
+    }
+    .dynamic-pulse {
+      animation: pulseGlow 5s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Deep Slate Canvas -->
+  <rect width="1200" height="420" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Blueprint Tech Grid -->
+  <g opacity="0.12">
+    <path d="M 0,70 L 1200,70 M 0,140 L 1200,140 M 0,210 L 1200,210 M 0,280 L 1200,280 M 0,350 L 1200,350" stroke="#38BDF8" stroke-width="1" stroke-dasharray="4,8"/>
+    <path d="M 150,0 L 150,420 M 300,0 L 300,420 M 450,0 L 450,420 M 600,0 L 600,420 M 750,0 L 750,420 M 900,0 L 900,420 M 1050,0 L 1050,420" stroke="#38BDF8" stroke-width="1" stroke-dasharray="4,8"/>
+  </g>
+
+  <!-- Dynamic Glowing Atmospheric Orbs (Positioned in Background) -->
+  <g class="orb1 dynamic-pulse">
+    <circle cx="150" cy="90" r="140" fill="#3DDC84" filter="url(#glowGreen)" opacity="0.3"/>
+  </g>
+  <g class="orb2 dynamic-pulse">
+    <circle cx="1060" cy="180" r="180" fill="#6366F1" filter="url(#glowPurple)" opacity="0.35"/>
+    <circle cx="920" cy="320" r="130" fill="#00C4B4" filter="url(#glowCyan)" opacity="0.25"/>
+  </g>
+
+  <!-- Background Decorative Architecture Badges / Pills (Right Side) -->
+  <g opacity="0.85" transform="translate(860, 65)">
+    <!-- Card 1: Apple Hypervisor -->
+    <rect x="0" y="0" width="280" height="64" rx="14" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <circle cx="32" cy="32" r="16" fill="#6366F1" opacity="0.3"/>
+    <path d="M26 32 L38 32 M32 26 L32 38" stroke="#A855F7" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="62" y="29" class="badge-text" font-weight="700">Hypervisor.framework</text>
+    <text x="62" y="47" class="badge-text" fill="#94A3B8" font-size="11">Hardware-Accelerated HVF</text>
+
+    <!-- Card 2: Native ARM64 Translation -->
+    <rect x="20" y="80" width="280" height="64" rx="14" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <circle cx="52" cy="112" r="16" fill="#3DDC84" opacity="0.25"/>
+    <circle cx="52" cy="112" r="6" fill="#3DDC84"/>
+    <text x="82" y="109" class="badge-text" font-weight="700">Native ARM64 Execution</text>
+    <text x="82" y="127" class="badge-text" fill="#94A3B8" font-size="11">Zero-VM Apple Silicon Runtimes</text>
+
+    <!-- Card 3: Metal GPU Acceleration -->
+    <rect x="-10" y="160" width="280" height="64" rx="14" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <circle cx="22" cy="192" r="16" fill="#38BDF8" opacity="0.3"/>
+    <polygon points="17,198 22,185 27,198" fill="#38BDF8"/>
+    <text x="52" y="189" class="badge-text" font-weight="700">Metal Graphics Shading</text>
+    <text x="52" y="207" class="badge-text" fill="#94A3B8" font-size="11">High-FPS Android 3D Games</text>
+  </g>
+
+  <!-- Foreground Title and Branding Content -->
+  <g transform="translate(80, 85)">
+    <!-- Top Category Pill -->
+    <rect x="0" y="0" width="260" height="32" rx="16" fill="rgba(61, 220, 132, 0.12)" stroke="#3DDC84" stroke-width="1"/>
+    <circle cx="16" cy="16" r="5" fill="#3DDC84"/>
+    <text x="28" y="20" class="pill-text">MACOS ANDROID ECOSYSTEM</text>
+
+    <!-- Main Title (Strictly Foregrounded & High Contrast) -->
+    <text x="0" y="80" class="title">Android Virtualization</text>
+    <text x="0" y="130" class="title">&amp; APK Runner on macOS</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="172" class="subtitle">Apple Silicon (M1–M4) &amp; Intel Hypervisors, Containers &amp; Native Translators</text>
+
+    <!-- Tagline description -->
+    <text x="0" y="208" class="badge-text" fill="#94A3B8" font-size="15">
+      The definitive curated index of high-performance Android emulators, SaaS virtualization clouds,
+    </text>
+    <text x="0" y="230" class="badge-text" fill="#94A3B8" font-size="15">
+      AOSP QEMU engines, and standalone ARM64 APK runners built for Mac.
+    </text>
+
+    <!-- Quick Attribute Badges Row -->
+    <g transform="translate(0, 260)">
+      <rect x="0" y="0" width="130" height="30" rx="8" fill="rgba(255, 255, 255, 0.07)" stroke="rgba(255, 255, 255, 0.12)"/>
+      <text x="14" y="19" class="badge-text" font-size="12">⚡ Apple Silicon</text>
+
+      <rect x="142" y="0" width="118" height="30" rx="8" fill="rgba(255, 255, 255, 0.07)" stroke="rgba(255, 255, 255, 0.12)"/>
+      <text x="156" y="19" class="badge-text" font-size="12">🛡️ Open-Source</text>
+
+      <rect x="272" y="0" width="124" height="30" rx="8" fill="rgba(255, 255, 255, 0.07)" stroke="rgba(255, 255, 255, 0.12)"/>
+      <text x="286" y="19" class="badge-text" font-size="12">☁️ Cloud SaaS</text>
+
+      <rect x="408" y="0" width="140" height="30" rx="8" fill="rgba(255, 255, 255, 0.07)" stroke="rgba(255, 255, 255, 0.12)"/>
+      <text x="422" y="19" class="badge-text" font-size="12">🎮 Metal Gaming</text>
+    </g>
+  </g>
+</svg>
